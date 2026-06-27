@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Core Base Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #FFFDFE;
+  color: #2B2B2B;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDFE;
+}
+::-webkit-scrollbar-thumb {
+  background: #F3D9E6;
+  border-radius: 5px;
+  border: 2px solid #FFFDFE;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C85A87;
+}
+
+/* Luxury Fonts */
+.font-serif-luxury {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Elegant Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #FFFDFE 0%, #FCEEF5 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #C85A87 0%, #A63F69 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #E6C594 0%, #D8B27A 50%, #C49E67 100%);
+}
+
+.gradient-gold-light {
+  background: linear-gradient(135deg, #FFFDFE 0%, #FAF0E4 100%);
+}
+
+.gradient-card-hover {
+  background: linear-gradient(to bottom, rgba(255, 253, 254, 1) 0%, rgba(252, 238, 245, 0.5) 100%);
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(255, 253, 254, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(243, 217, 230, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(243, 217, 230, 0.6);
+}
+
+/* Fine Borders */
+.border-luxury {
+  border: 1px solid #F3D9E6;
+}
+
+.border-gold-luxury {
+  border: 1px solid rgba(216, 178, 122, 0.4);
+}
+
+/* Premium Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGold {
+  0% { box-shadow: 0 0 0 0 rgba(216, 178, 122, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(216, 178, 122, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(216, 178, 122, 0); }
+}
+
+@keyframes pulseRose {
+  0% { box-shadow: 0 0 0 0 rgba(200, 90, 135, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(200, 90, 135, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(200, 90, 135, 0); }
+}
+
+@keyframes subtleFade {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 2s infinite;
+}
+
+.animate-pulse-rose {
+  animation: pulseRose 2.5s infinite;
+}
+
+/* Scroll Reveal Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gallery Hover Overlays */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 43, 43, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: scale(1.05);
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Luxury Decorative Elements */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D8B27A 50%, transparent);
+  width: 100%;
+}
+
+.rose-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C85A87 50%, transparent);
+  width: 100%;
+}
+
+/* Custom UI Elements styling */
+.active-nav-link {
+  color: #C85A87;
+  position: relative;
+}
+
+.active-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #C85A87;
+  border-radius: 2px;
+}
+
+/* Custom Toggle Active State for Filters */
+.filter-btn-active {
+  background-color: #C85A87 !important;
+  color: #FFFFFF !important;
+  border-color: #C85A87 !important;
+}
+
+/* Custom Interactive Contact Info */
+.hover-gold-link:hover {
+  color: #D8B27A !important;
+  transform: translateX(4px);
+  transition: all 0.3s ease;
+}
+
+/* Contact form inputs focusing styling */
+.luxury-input {
+  transition: all 0.3s ease;
+}
+.luxury-input:focus {
+  border-color: #C85A87 !important;
+  box-shadow: 0 0 0 3px rgba(200, 90, 135, 0.1) !important;
+  outline: none;
+}

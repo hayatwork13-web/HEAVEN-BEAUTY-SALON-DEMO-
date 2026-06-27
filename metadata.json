@@ -1,0 +1,6 @@
+{
+  "name": "Heaven Beauty Salon & Studio",
+  "description": "Luxury Ladies Beauty Salon & Bridal Studio in Latifabad, Hyderabad, Pakistan. Premium bridal makeup, luxury hair treatments, and custom beauty services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven Beauty Salon & Studio | Luxury Ladies Salon & Bridal Lounge</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Heaven Beauty Salon & Studio, Latifabad, Hyderabad. Discover luxury bridal makeup, party makeup, keratin treatments, custom skin care, and boutique salon services. Rated 5.0 Stars.">
+  <meta name="keywords" content="Heaven Beauty Salon, bridal studio Latifabad, Hyderabad beauty parlor, ladies salon Hyderabad, bridal makeup Hyderabad, keratin treatment Latifabad, party makeup, facial, manicure pedicure, ladies salon Pakistan">
+  <meta name="author" content="Heaven Beauty Salon & Studio">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryBg: '#FFFDFE',
+            secondaryBg: '#FCEEF5',
+            accent: '#C85A87',
+            roseGold: '#D8B27A',
+            highlight: '#F8DCE8',
+            cardBg: '#FFFFFF',
+            textMain: '#2B2B2B',
+            textMuted: '#6D6D6D',
+            borderPink: '#F3D9E6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primaryBg text-textMain antialiased selection:bg-highlight selection:text-accent">
+
+  <!-- 1. STICKY NAVIGATION HEADER -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 glass-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#home" class="flex flex-col items-start focus:outline-none">
+        <span class="font-serif-luxury text-2xl sm:text-3xl font-bold tracking-[0.18em] text-accent">HEAVEN</span>
+        <span class="text-[9px] sm:text-[10px] font-sans font-semibold tracking-[0.3em] text-roseGold uppercase mt-0.5">Beauty Salon & Studio</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300 active-nav-link">Home</a>
+        <a href="#about" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">About</a>
+        <a href="#services" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">Services</a>
+        <a href="#experience" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">Experience</a>
+        <a href="#why-choose-us" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">Why Us</a>
+        <a href="#gallery" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">Showcase</a>
+        <a href="#contact" class="nav-link font-sans text-xs font-medium tracking-widest text-textMuted hover:text-accent uppercase transition-colors duration-300">Contact</a>
+      </nav>
+
+      <!-- CTA Book Button -->
+      <div class="hidden md:block">
+        <a href="#contact" class="inline-block px-5 py-2.5 font-sans text-xs font-semibold tracking-wider text-white gradient-accent rounded-full shadow-sm hover:shadow-md hover:scale-105 active:scale-95 transition-all duration-300 animate-pulse-rose">
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden p-2 text-textMain hover:text-accent transition-colors duration-300 focus:outline-none" aria-label="Open navigation menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-menu" class="fixed inset-0 bg-primaryBg z-[60] flex flex-col justify-between p-6 transform translate-x-full transition-transform duration-500 ease-in-out md:hidden shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex flex-col">
+          <span class="font-serif-luxury text-2xl font-bold tracking-[0.18em] text-accent">HEAVEN</span>
+          <span class="text-[9px] font-semibold tracking-[0.3em] text-roseGold uppercase mt-0.5">Beauty Salon & Studio</span>
+        </div>
+        <button id="close-menu-btn" class="p-2 text-textMain hover:text-accent transition-colors duration-300 focus:outline-none" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-6">
+        <a href="#home" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Home</a>
+        <a href="#about" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">About Us</a>
+        <a href="#services" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Premium Services</a>
+        <a href="#experience" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Our Experience</a>
+        <a href="#why-choose-us" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Why Choose Us</a>
+        <a href="#gallery" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Our Showcase</a>
+        <a href="#contact" class="mobile-nav-link text-lg font-serif-luxury tracking-wide text-textMain hover:text-accent py-1">Contact & Booking</a>
+      </nav>
+    </div>
+
+    <div class="border-t border-borderPink pt-6 space-y-4">
+      <div class="flex items-center space-x-3 text-textMuted text-xs">
+        <i data-lucide="phone" class="w-4 h-4 text-roseGold"></i>
+        <span>+92 300 3287865</span>
+      </div>
+      <div class="flex items-center space-x-3 text-textMuted text-xs">
+        <i data-lucide="map-pin" class="w-4 h-4 text-roseGold"></i>
+        <span>Latifabad Unit 2, Hyderabad</span>
+      </div>
+      <a href="#contact" class="block w-full py-3 text-center text-xs font-semibold tracking-wider text-white gradient-accent rounded-full">
+        Book Appointment
+      </a>
+    </div>
+  </div>
+
+
+  <!-- 2. HERO SECTION -->
+  <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden gradient-primary">
+    <!-- Decorative Ambient Background Elements -->
+    <div class="absolute top-20 right-[-10%] w-[400px] h-[400px] rounded-full bg-[#FCEEF5] blur-3xl opacity-60"></div>
+    <div class="absolute bottom-10 left-[-10%] w-[350px] h-[350px] rounded-full bg-[#F8DCE8] blur-3xl opacity-50"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Side Copy -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left reveal">
+          
+          <!-- Small Tag -->
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-roseGold/30 bg-white shadow-sm mb-6">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+            </span>
+            <span class="text-[10px] sm:text-xs font-sans font-semibold tracking-widest text-accent uppercase">Luxury Ladies Lounge</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-textMain leading-[1.1] mb-6">
+            Your Beauty,<br>
+            <span class="text-accent italic relative inline-block">
+              Our Passion.
+              <span class="absolute bottom-1.5 left-0 w-full h-[6px] bg-highlight -z-10 rounded-full"></span>
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="font-sans text-sm sm:text-base lg:text-lg text-textMuted leading-relaxed max-w-xl mb-8">
+            Luxury bridal makeup, premium beauty treatments and personalized salon experiences crafted to make every visit unforgettable. Experience world-class beauty care in Latifabad.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto mb-12">
+            <a href="#contact" class="px-8 py-4 text-center text-sm font-semibold tracking-wider text-white gradient-accent rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
+              Book Appointment
+            </a>
+            <a href="https://wa.me/923003287865?text=Hello%20Heaven%20Beauty%20Salon%20%26%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="px-8 py-4 text-center text-sm font-semibold tracking-wider text-accent border border-accent bg-white rounded-full shadow-sm hover:bg-secondaryBg hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-center space-x-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Statistics Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full border-t border-borderPink pt-8">
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl font-bold text-accent font-serif-luxury">5.0 ★</span>
+              <span class="text-[10px] font-semibold text-textMuted tracking-wider uppercase mt-1">Google Rating</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl font-bold text-accent font-serif-luxury">Bridal</span>
+              <span class="text-[10px] font-semibold text-textMuted tracking-wider uppercase mt-1">Specialists</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl font-bold text-accent font-serif-luxury">Premium</span>
+              <span class="text-[10px] font-semibold text-textMuted tracking-wider uppercase mt-1">Beauty Services</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl font-bold text-accent font-serif-luxury">Personal</span>
+              <span class="text-[10px] font-semibold text-textMuted tracking-wider uppercase mt-1">Care & Attention</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side Graphic Overlay (Luxury Concept Placeholder) -->
+        <div class="lg:col-span-5 relative flex justify-center items-center reveal">
+          
+          <!-- Floating Frame Artwork -->
+          <div class="relative w-full max-w-[380px] aspect-[4/5] rounded-[30px] border-luxury border-4 bg-white p-4 shadow-xl animate-float">
+            
+            <!-- Fine gold border detail inside -->
+            <div class="w-full h-full rounded-[22px] border-gold-luxury border flex flex-col justify-between p-6 relative overflow-hidden gradient-gold-light">
+              
+              <!-- Subtle watermark -->
+              <div class="absolute -right-16 -top-16 w-48 h-48 rounded-full border border-roseGold/20 flex items-center justify-center">
+                <div class="w-36 h-36 rounded-full border border-roseGold/10"></div>
+              </div>
+              
+              <!-- Top Card Decor -->
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.25em] text-roseGold uppercase font-sans">Heaven Studio</span>
+                <i data-lucide="sparkles" class="w-5 h-5 text-roseGold"></i>
+              </div>
+
+              <!-- Center Graphic Monogram -->
+              <div class="my-auto flex flex-col items-center text-center">
+                <div class="w-20 h-20 rounded-full border border-roseGold flex items-center justify-center mb-4 bg-white shadow-sm">
+                  <span class="font-serif-luxury text-3xl font-light text-accent italic">H</span>
+                </div>
+                <h3 class="font-serif-luxury text-xl font-bold tracking-widest text-textMain uppercase mb-1">Heaven</h3>
+                <p class="font-serif-luxury text-xs italic text-roseGold tracking-widest">Where elegance finds its perfection</p>
+                
+                <!-- Gold Line Divider -->
+                <div class="w-24 mt-4 text-center">
+                  <div class="gold-line"></div>
+                </div>
+              </div>
+
+              <!-- Card Footer Meta -->
+              <div class="flex justify-between items-end">
+                <div class="flex flex-col">
+                  <span class="text-[8px] font-semibold text-textMuted uppercase tracking-wider">Located In</span>
+                  <span class="text-[10px] font-bold text-textMain tracking-wide">Latifabad, Pakistan</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <span class="text-xs font-bold text-accent">5.0</span>
+                  <div class="flex text-roseGold">
+                    <i data-lucide="star" class="w-3 h-3 fill-roseGold stroke-none"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating Mini Card 1 -->
+            <div class="absolute -left-8 top-1/4 glass-card rounded-2xl p-3.5 shadow-lg flex items-center space-x-3 border border-borderPink animate-pulse-rose">
+              <div class="p-2 bg-highlight rounded-xl flex items-center justify-center">
+                <i data-lucide="crown" class="w-4 h-4 text-accent"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-textMuted uppercase tracking-wider">Bridal Lounge</span>
+                <span class="text-xs font-bold text-textMain">Exquisite Looks</span>
+              </div>
+            </div>
+
+            <!-- Floating Mini Card 2 -->
+            <div class="absolute -right-8 bottom-1/4 glass-card rounded-2xl p-3.5 shadow-lg flex items-center space-x-3 border border-borderPink animate-pulse-gold">
+              <div class="p-2 bg-secondaryBg rounded-xl flex items-center justify-center">
+                <i data-lucide="heart" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-textMuted uppercase tracking-wider">Skincare Spa</span>
+                <span class="text-xs font-bold text-textMain">Flawless Glow</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3. ABOUT US SECTION -->
+  <section id="about" class="py-24 bg-white relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Left Column: Graphic Display & Heritage Badge -->
+        <div class="lg:col-span-5 reveal flex justify-center">
+          <div class="relative w-full max-w-[360px] aspect-[4/5] rounded-[30px] border border-borderPink bg-primaryBg p-8 flex flex-col justify-between shadow-sm relative overflow-hidden">
+            
+            <!-- Fine borders -->
+            <div class="absolute inset-4 border border-roseGold/20 rounded-[22px] pointer-events-none"></div>
+
+            <div class="text-left">
+              <span class="font-serif-luxury text-3xl font-bold tracking-widest text-accent">EST.</span>
+              <p class="text-xs font-semibold tracking-widest text-roseGold uppercase mt-1">LATIFABAD HYDERABAD</p>
+            </div>
+
+            <div class="my-auto py-6">
+              <p class="font-serif-luxury text-lg italic text-textMain leading-relaxed mb-4">
+                "Our studio was created with one simple philosophy: to provide an oasis of elegance where beauty is celebrated as an art form."
+              </p>
+              <div class="w-16">
+                <div class="gold-line"></div>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center pt-4 border-t border-borderPink/40">
+              <div class="flex flex-col">
+                <span class="text-xs font-bold text-textMain uppercase tracking-widest">Premium Aesthetics</span>
+                <span class="text-[10px] text-textMuted tracking-wider mt-0.5">Heaven Beauty Salon</span>
+              </div>
+              <div class="w-10 h-10 rounded-full border border-roseGold/30 bg-white flex items-center justify-center">
+                <i data-lucide="award" class="w-4 h-4 text-roseGold"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Polished Copywriting -->
+        <div class="lg:col-span-7 reveal">
+          
+          <span class="text-xs font-sans font-semibold tracking-[0.3em] text-roseGold uppercase block mb-3">About The Studio</span>
+          
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-6 leading-tight">
+            An Unrivaled Sanctuary of <br>
+            <span class="text-accent italic">Boutique Beauty & Elegance</span>
+          </h2>
+
+          <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed mb-6">
+            Heaven Beauty Salon & Studio is Latifabad's ultimate luxury destination for discerning women seeking premium bridal and aesthetic services. Located in the heart of Hyderabad, we blend absolute clinical hygiene with opulent comfort.
+          </p>
+
+          <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed mb-8">
+            Our bridal experts are highly trained in high-definition makeup, classical wedding looks, contemporary styling, and tailored skincare therapies. We use only selected international cosmetic products, ensuring that your glow is as healthy as it is gorgeous.
+          </p>
+
+          <!-- Interactive Tabs for Philosophy -->
+          <div class="border-b border-borderPink/60 flex space-x-6 mb-6">
+            <button class="philosophy-tab pb-3 font-serif-luxury text-sm font-semibold tracking-wider text-[#C85A87] border-b-2 border-[#C85A87] hover:text-accent transition-all duration-300 focus:outline-none" data-target="vision-content">
+              Our Vision
+            </button>
+            <button class="philosophy-tab pb-3 font-serif-luxury text-sm font-semibold tracking-wider text-textMuted border-b-2 border-transparent hover:text-accent transition-all duration-300 focus:outline-none" data-target="promise-content">
+              Our Promise
+            </button>
+          </div>
+
+          <!-- Tab Content 1 -->
+          <div id="vision-content" class="philosophy-content space-y-4">
+            <p class="text-sm text-textMuted leading-relaxed italic">
+              "We envision redefining beauty care in Latifabad by bringing modern techniques, high-fashion standards, and international quality services directly to your neighborhood. Every woman deserves a personal sanctuary where her unique beauty is polished to perfection."
+            </p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-textMain pt-2">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-accent"></i>
+                <span>Custom Bridal Consultations</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-accent"></i>
+                <span>HD & Airbrush Makeup</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-accent"></i>
+                <span>Imported Aesthetics</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-accent"></i>
+                <span>Continuous Artist Training</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content 2 -->
+          <div id="promise-content" class="philosophy-content space-y-4 hidden">
+            <p class="text-sm text-textMuted leading-relaxed italic">
+              "Our promise is simple yet uncompromised: We will never use sub-standard products, we will maintain 100% sterile tools, and we will dedicate our undivided attention to make you feel like royalty from the moment you step through our doors."
+            </p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-textMain pt-2">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-roseGold"></i>
+                <span>100% Hygienic Sanitization</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-roseGold"></i>
+                <span>Authentic Global Brands Only</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-roseGold"></i>
+                <span>Punctual & Dedicated Bookings</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-roseGold"></i>
+                <span>No Hidden Charges or Add-ons</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. PREMIUM SERVICES SECTION (Interactive & Filterable) -->
+  <section id="services" class="py-24 bg-secondaryBg relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-sans font-semibold tracking-[0.3em] text-accent uppercase block mb-3">Our Service Menu</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+          Indulge in Premium Beauty
+        </h2>
+        <div class="w-24 mx-auto mb-6">
+          <div class="rose-line"></div>
+        </div>
+        <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed">
+          Explore our selected range of luxury treatments, expertly customized to reflect your personal elegance. Click quick-book to start your booking instantly.
+        </p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12 reveal">
+        <button class="filter-btn filter-btn-active px-5 py-2.5 rounded-full border border-borderPink bg-white text-xs font-semibold tracking-wider text-textMuted uppercase hover:bg-secondaryBg hover:text-accent hover:border-accent transition-all duration-300 focus:outline-none" data-category="all">
+          All Services
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full border border-borderPink bg-white text-xs font-semibold tracking-wider text-textMuted uppercase hover:bg-secondaryBg hover:text-accent hover:border-accent transition-all duration-300 focus:outline-none" data-category="bridal">
+          Bridal & Makeup
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full border border-borderPink bg-white text-xs font-semibold tracking-wider text-textMuted uppercase hover:bg-secondaryBg hover:text-accent hover:border-accent transition-all duration-300 focus:outline-none" data-category="hair">
+          Hair Care
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full border border-borderPink bg-white text-xs font-semibold tracking-wider text-textMuted uppercase hover:bg-secondaryBg hover:text-accent hover:border-accent transition-all duration-300 focus:outline-none" data-category="skin">
+          Skin & Spa
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full border border-borderPink bg-white text-xs font-semibold tracking-wider text-textMuted uppercase hover:bg-secondaryBg hover:text-accent hover:border-accent transition-all duration-300 focus:outline-none" data-category="nails">
+          Hands & Feet
+        </button>
+      </div>
+
+      <!-- Services Grid (10 Required Services) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Bridal Makeup -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="bridal">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <span class="px-3 py-1 bg-highlight text-[9px] font-bold tracking-widest text-accent uppercase rounded-full">Signature</span>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Bridal Makeup</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Bespoke bridal styling including flawless HD traditional makeup, fine draping, jewelry setting, and personal consultations for your dream wedding look.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Luxury Lounge</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Bridal Makeup">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Party Makeup -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="bridal">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="gem" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Party Makeup</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Stunning high-glam or elegant dewy party makeup customized to highlight your natural features for banquets, dinners, and special occasions.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">High-Glam Look</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Party Makeup">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Hair Styling -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="hair">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="scissors" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Hair Styling</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            From luxury curls, traditional wedding braids, to sleek up-dos and contemporary hair trends designed by our master stylists.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Design Stylist</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Hair Styling">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Hair Treatments -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="hair">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Hair Treatments</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Advanced clinical treatments targeting damage, dryness, and split-ends to completely restore hair luster, health, and bounce.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Clinical Therapy</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Hair Treatments">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Keratin Treatment -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="hair">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="crown" class="w-6 h-6"></i>
+            </div>
+            <span class="px-3 py-1 bg-highlight text-[9px] font-bold tracking-widest text-accent uppercase rounded-full">Popular</span>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Keratin Treatment</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Premium protein-infused smoothing and straightening therapies that eliminate frizz completely, leaving your locks silky, shiny and manageable.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Silk-Protein</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Keratin Treatment">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Hair Spa -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="hair">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="droplet" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Hair Spa</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Deep nourishing and relaxing conditioning hair massage that stimulates follicles, increases blood circulation, and releases stress.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Nourish & Relax</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Hair Spa">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. Facial Treatments -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="skin">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="flower2" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Facial Treatments</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Luxury facials designed to deep-cleanse, exfoliate, and hydrate, utilizing international specialized skincare techniques for lasting radiance.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Deep Radiance</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Facial Treatments">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Skin Care -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="skin">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="heart" class="w-6 h-6"></i>
+            </div>
+            <span class="px-3 py-1 bg-highlight text-[9px] font-bold tracking-widest text-accent uppercase rounded-full">Aesthetics</span>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Skin Care</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Tailored skincare therapies focusing on hydration, brightening, and age-defying results using certified high-end cosmetic formulations.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Certified Aesthetics</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Skin Care">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 9. Waxing -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="skin">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Waxing</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Hygenic, fast, and gentle waxing treatments using quality premium wax products that soothe the skin while leaving it beautifully smooth.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Sterile & Gentle</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Waxing">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 10. Manicure & Pedicure -->
+        <div class="service-card bg-white rounded-3xl border border-borderPink p-8 shadow-sm hover:shadow-xl hover:gradient-card-hover hover:-translate-y-1 transition-all duration-500 reveal" data-category="nails">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFDFE] border border-roseGold/30 flex items-center justify-center text-roseGold shadow-inner">
+              <i data-lucide="hand" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Manicure & Pedicure</h3>
+          <p class="text-sm text-textMuted leading-relaxed mb-6">
+            Luxury hand and foot spa treatment with complete nail shaping, cuticle therapy, soothing scrub, relaxing massage, and elegant gel colors.
+          </p>
+          <div class="flex justify-between items-center border-t border-borderPink/40 pt-4">
+            <span class="text-xs font-semibold text-roseGold tracking-wider uppercase">Relaxing Mani-Pedi</span>
+            <button class="quick-book-btn text-xs font-bold text-accent flex items-center space-x-1 hover:translate-x-1 transition-transform" data-service="Manicure & Pedicure">
+              <span>Quick Book</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 5. SIGNATURE BEAUTY EXPERIENCE (Journey Steps) -->
+  <section id="experience" class="py-24 bg-white relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-sans font-semibold tracking-[0.3em] text-roseGold uppercase block mb-3">Our Premium Philosophy</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+          The Signature Beauty Experience
+        </h2>
+        <div class="w-24 mx-auto mb-6">
+          <div class="gold-line"></div>
+        </div>
+        <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed">
+          At Heaven Beauty Salon & Studio, we design unforgettable personal journeys where aesthetic mastery meets absolute luxury.
+        </p>
+      </div>
+
+      <!-- Experience Steps Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+        
+        <!-- Interactive Step 1 -->
+        <div class="flex flex-col items-center text-center reveal">
+          <div class="w-16 h-16 rounded-full border border-roseGold/40 bg-primaryBg flex items-center justify-center text-accent shadow-sm mb-6 relative group hover:border-accent hover:scale-110 transition-all duration-300">
+            <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">1</span>
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury text-lg font-bold text-textMain mb-2">Bridal Consultation</h4>
+          <p class="text-xs text-textMuted leading-relaxed px-4">
+            One-on-one custom session with our creative directors to outline your perfect bridal mood board and cosmetics selection.
+          </p>
+        </div>
+
+        <!-- Interactive Step 2 -->
+        <div class="flex flex-col items-center text-center reveal">
+          <div class="w-16 h-16 rounded-full border border-roseGold/40 bg-primaryBg flex items-center justify-center text-accent shadow-sm mb-6 relative group hover:border-accent hover:scale-110 transition-all duration-300">
+            <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">2</span>
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury text-lg font-bold text-textMain mb-2">Custom Packages</h4>
+          <p class="text-xs text-textMuted leading-relaxed px-4">
+            Bespoke treatment packages designed precisely around your personal calendar, combining skin preps and hair styling.
+          </p>
+        </div>
+
+        <!-- Interactive Step 3 -->
+        <div class="flex flex-col items-center text-center reveal">
+          <div class="w-16 h-16 rounded-full border border-roseGold/40 bg-primaryBg flex items-center justify-center text-accent shadow-sm mb-6 relative group hover:border-accent hover:scale-110 transition-all duration-300">
+            <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">3</span>
+            <i data-lucide="gem" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury text-lg font-bold text-textMain mb-2">Luxury Treatments</h4>
+          <p class="text-xs text-textMuted leading-relaxed px-4">
+            Indulge in imported clinical facials, nourishing hot oil spas, and elite protein therapies to build the perfect canvas.
+          </p>
+        </div>
+
+        <!-- Interactive Step 4 -->
+        <div class="flex flex-col items-center text-center reveal">
+          <div class="w-16 h-16 rounded-full border border-roseGold/40 bg-primaryBg flex items-center justify-center text-accent shadow-sm mb-6 relative group hover:border-accent hover:scale-110 transition-all duration-300">
+            <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">4</span>
+            <i data-lucide="brush" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury text-lg font-bold text-textMain mb-2">Expert Artists</h4>
+          <p class="text-xs text-textMuted leading-relaxed px-4">
+            Our certified master makeup artists execute flawless detailing, precise contours, and custom styles with extreme care.
+          </p>
+        </div>
+
+        <!-- Interactive Step 5 -->
+        <div class="flex flex-col items-center text-center reveal">
+          <div class="w-16 h-16 rounded-full border border-roseGold/40 bg-primaryBg flex items-center justify-center text-accent shadow-sm mb-6 relative group hover:border-accent hover:scale-110 transition-all duration-300">
+            <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-accent text-white text-[10px] font-bold flex items-center justify-center">5</span>
+            <i data-lucide="package" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury text-lg font-bold text-textMain mb-2">Premium Cosmetics</h4>
+          <p class="text-xs text-textMuted leading-relaxed px-4">
+            Using authentic high-end products (Huda Beauty, MAC, Charlotte Tilbury) to ensure absolute longevity, comfort, and glowing photos.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 6. WHY CHOOSE US (Bento Grid) -->
+  <section id="why-choose-us" class="py-24 bg-primaryBg relative overflow-hidden border-t border-b border-borderPink/40">
+    <div class="absolute top-10 left-10 w-[200px] h-[200px] bg-secondaryBg blur-3xl opacity-60"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-sans font-semibold tracking-[0.3em] text-accent uppercase block mb-3">Why Salon Heaven</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+          Uncompromised Luxury & Quality
+        </h2>
+        <div class="w-24 mx-auto mb-6">
+          <div class="rose-line"></div>
+        </div>
+        <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed">
+          Discover why Hyderabad's beauty lovers trust us for their life's most precious occasions.
+        </p>
+      </div>
+
+      <!-- Bento Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Bento 1: 5.0 Rating -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-1 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="star" class="w-5 h-5 fill-accent stroke-none"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">5.0 Star Rated Experience</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              Celebrated as Latifabad's top-rated ladies studio. Our flawless client score represents absolute dedication, artistic precision, and consistency across every service.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 flex items-center space-x-2 text-xs font-bold text-accent">
+            <span>Verified Customer Score</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Luxury Experts (Wide Card) -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-2 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Luxury Beauty Experts</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              Our studio houses highly passionate, master-certified hair colorists, bridal makeup technicians, and professional clinical therapists. Led by directors with decades of combined experience, we translate global trends into personalized services designed to enhance your unique facial architecture.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 flex items-center space-x-4 text-xs font-bold text-roseGold">
+            <span>• Master Colorists</span>
+            <span>• Bridal Specialists</span>
+            <span>• Aesthetic Therapists</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: Premium Products (Wide Card) -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-2 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="package" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Premium Imported Cosmetics</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              We never compromise. Every foundation, styling cream, facial serum, and dye used in our studio belongs to certified global luxury lines (Huda Beauty, MAC, Anastasia Beverly Hills, L'Oréal Professional). This guarantees longevity, vibrant photographic coverage, and healthy skin/hair.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 flex items-center space-x-4 text-xs font-bold text-roseGold">
+            <span>• Huda Beauty</span>
+            <span>• MAC Cosmetics</span>
+            <span>• L'Oréal Pro</span>
+          </div>
+        </div>
+
+        <!-- Bento 4: Hygienic Environment -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-1 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Sterile & Hygienic</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              Your safety is our priority. We maintain strict sanitization cycles. All brushes, combs, clippers, and tubs are deep-sterilized and unpacked fresh before every individual appointment.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 text-xs font-bold text-accent">
+            <span>Zero-contamination Guarantee</span>
+          </div>
+        </div>
+
+        <!-- Bento 5: Personalized Consultation -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-1 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="message-square" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Personalized Care</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              We listen to your desires. We don't believe in generic templates. Our consultations focus on matching your outfit, skin type, hair texture, and individual aesthetic goals precisely.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 text-xs font-bold text-accent">
+            <span>Customized Service Plans</span>
+          </div>
+        </div>
+
+        <!-- Bento 6: Customer Satisfaction -->
+        <div class="bg-white border border-borderPink p-8 rounded-3xl md:col-span-2 shadow-sm hover:shadow-md transition-all duration-300 reveal flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mb-6">
+              <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-textMain mb-3">Absolute Customer Delight</h3>
+            <p class="text-xs text-textMuted leading-relaxed">
+              Our ultimate objective is your pure delight. From the warm complementary tea served upon arrival, down to our comfortable VIP lounge seating and detailed follow-up check-ins, we treat every single salon visitor like an esteemed queen.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-borderPink/40 flex items-center space-x-2 text-xs font-bold text-roseGold">
+            <span>• VIP Pampering</span>
+            <span>• Complementary Refreshments</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 7. TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-24 bg-secondaryBg relative overflow-hidden">
+    <div class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] bg-white blur-3xl opacity-60"></div>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="text-xs font-sans font-semibold tracking-[0.3em] text-accent uppercase block mb-3">Kind Words</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+          Loved by Our Exquisite Clients
+        </h2>
+        <div class="w-24 mx-auto mb-6">
+          <div class="rose-line"></div>
+        </div>
+      </div>
+
+      <!-- Testimonial Slider Container -->
+      <div class="relative bg-white rounded-[32px] border border-borderPink p-8 sm:p-12 shadow-lg reveal">
+        
+        <!-- Large double quotes decorative icon -->
+        <div class="absolute top-6 left-6 text-highlight opacity-40">
+          <svg class="w-16 h-16 fill-current" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        </div>
+
+        <div class="overflow-hidden relative w-full">
+          <!-- Slider Track -->
+          <div id="testimonials-track" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+            
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 px-2 sm:px-4 testimonial-slide">
+              <div class="flex flex-col items-center text-center">
+                
+                <!-- Stars -->
+                <div class="flex space-x-1 text-roseGold mb-6">
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                </div>
+
+                <p class="font-serif-luxury text-base sm:text-lg lg:text-xl text-textMain leading-relaxed mb-6 italic">
+                  "I booked Heaven Salon for my bridal makeup, and it was the best decision of my life! The makeup was absolutely flawless, radiant, and lasted perfectly all night. The staff treated me like royalty. Latifabad is lucky to have such a luxury studio!"
+                </p>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center font-bold text-accent font-serif-luxury text-sm">
+                    A
+                  </div>
+                  <div class="text-left">
+                    <h4 class="font-serif-luxury text-sm font-bold text-textMain">Ayesha Khan</h4>
+                    <p class="text-[10px] font-semibold text-textMuted uppercase tracking-wider">Verified Bride</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 px-2 sm:px-4 testimonial-slide">
+              <div class="flex flex-col items-center text-center">
+                
+                <!-- Stars -->
+                <div class="flex space-x-1 text-roseGold mb-6">
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                </div>
+
+                <p class="font-serif-luxury text-base sm:text-lg lg:text-xl text-textMain leading-relaxed mb-6 italic">
+                  "Their Keratin treatment is phenomenal. My hair was extremely fizzy, dry and unmanageable, but now it feels like absolute silk! The hygiene standard inside is pristine and clean, and they opened a sterile kit in front of me."
+                </p>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center font-bold text-accent font-serif-luxury text-sm">
+                    S
+                  </div>
+                  <div class="text-left">
+                    <h4 class="font-serif-luxury text-sm font-bold text-textMain">Sana Zehra</h4>
+                    <p class="text-[10px] font-semibold text-textMuted uppercase tracking-wider">Regular Skincare Client</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 px-2 sm:px-4 testimonial-slide">
+              <div class="flex flex-col items-center text-center">
+                
+                <!-- Stars -->
+                <div class="flex space-x-1 text-roseGold mb-6">
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                  <i data-lucide="star" class="w-5 h-5 fill-roseGold stroke-none"></i>
+                </div>
+
+                <p class="font-serif-luxury text-base sm:text-lg lg:text-xl text-textMain leading-relaxed mb-6 italic">
+                  "I regularly get my manicure, pedicure, and facials done at Heaven Beauty Salon. Their massage techniques are so relaxing, and the products they use are clearly premium imported quality. Simply outstanding customer hospitality."
+                </p>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-full bg-highlight flex items-center justify-center font-bold text-accent font-serif-luxury text-sm">
+                    M
+                  </div>
+                  <div class="text-left">
+                    <h4 class="font-serif-luxury text-sm font-bold text-textMain">Mariam Rizvi</h4>
+                    <p class="text-[10px] font-semibold text-textMuted uppercase tracking-wider">VIP Salon Member</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slider Arrows -->
+        <div class="absolute inset-y-1/2 -left-4 sm:-left-6 lg:-left-8 flex items-center">
+          <button id="prev-testimonial" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-borderPink bg-white shadow-md flex items-center justify-center text-textMain hover:text-accent hover:border-accent active:scale-95 transition-all duration-300 focus:outline-none" aria-label="Previous testimonial">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="absolute inset-y-1/2 -right-4 sm:-right-6 lg:-right-8 flex items-center">
+          <button id="next-testimonial" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-borderPink bg-white shadow-md flex items-center justify-center text-textMain hover:text-accent hover:border-accent active:scale-95 transition-all duration-300 focus:outline-none" aria-label="Next testimonial">
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Trust Indicator -->
+      <div class="mt-12 text-center reveal">
+        <p class="text-xs text-textMuted flex items-center justify-center space-x-1.5 font-semibold">
+          <i data-lucide="shield" class="w-4 h-4 text-roseGold"></i>
+          <span>100% Genuine reviews from local Google Maps listings</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 8. BEAUTY SHOWCASE (Interactive Portfolio Placeholders) -->
+  <section id="gallery" class="py-24 bg-white relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-sans font-semibold tracking-[0.3em] text-roseGold uppercase block mb-3">Portfolio Preview</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+          Our Luxury Gallery Showcase
+        </h2>
+        <div class="w-24 mx-auto mb-6">
+          <div class="gold-line"></div>
+        </div>
+        <p class="font-sans text-sm sm:text-base text-textMuted leading-relaxed">
+          Premium artistic previews ready for replacing with custom salon session photographs. Click on any card to view detailed look portfolio.
+        </p>
+      </div>
+
+      <!-- Showcase Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Showcase 1 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] gradient-gold-light relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Bridal Makeover</span>
+                <i data-lucide="sparkles" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">Signature Bridal</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">HD Wedding Transformation</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">Signature Bridal</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Flawless HD makeup paired with traditional dupatta setting and luxury accessories styling.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 2 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] bg-gradient-to-br from-[#FFFDFE] to-[#FCEEF5] relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Party Makeup</span>
+                <i data-lucide="gem" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">High-Glam Look</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">Contemporary Party Glow</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">High-Glam Look</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Radiant skin contouring with custom shimmery eyelids crafted for prestigious evenings.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 3 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] bg-gradient-to-br from-[#FFFDFE] to-[#F8DCE8]/30 relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Keratin Therapy</span>
+                <i data-lucide="crown" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">Keratin Silk Therapy</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">Premium Straightening</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">Keratin Silk Therapy</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Absolute protein infusion process creating smooth, healthy, and ultra-straight lock structures.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 4 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] bg-gradient-to-br from-[#FFFDFE] to-[#FAF0E4] relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Facial Spa</span>
+                <i data-lucide="flower2" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">Aesthetic Facial</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">Gold-Radiance Skin Treatment</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">Aesthetic Facial</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Deep-penetrating gold-infused facial therapy revitalizing cellular elasticity and brightness.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 5 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] bg-gradient-to-br from-[#FFFDFE] to-[#FCEEF5] relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Nail Lounge</span>
+                <i data-lucide="hand" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">Luxury Nail Art</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">Exquisite Polish & Mani-Pedi</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">Luxury Nail Art</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Detailed custom gel nail art formulations, hand sculpting, and deeply relaxing structural scrubs.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 6 -->
+        <div class="gallery-card group cursor-pointer reveal">
+          <div class="aspect-[4/5] rounded-[32px] border border-borderPink p-4 bg-white shadow-sm hover:shadow-lg transition-all duration-500">
+            <div class="w-full h-full rounded-[20px] bg-gradient-to-br from-[#FFFDFE] to-[#FAF0E4] relative overflow-hidden flex flex-col justify-between p-6">
+              <div class="absolute -right-12 -top-12 w-32 h-32 rounded-full border border-roseGold/20"></div>
+              <div class="flex justify-between items-start">
+                <span class="text-[9px] font-bold tracking-[0.2em] text-roseGold uppercase font-sans">Hairstyling</span>
+                <i data-lucide="scissors" class="w-4 h-4 text-roseGold"></i>
+              </div>
+              <div class="flex flex-col items-center text-center my-auto">
+                <div class="w-14 h-14 rounded-full border border-roseGold/30 flex items-center justify-center mb-3 bg-white text-accent">
+                  <span class="font-serif-luxury text-lg italic font-light">H</span>
+                </div>
+                <h4 class="font-serif-luxury text-base font-bold text-textMain uppercase tracking-wider mb-1">Couture Hairstyles</h4>
+                <p class="text-[10px] text-textMuted tracking-wider font-sans uppercase">Intricate Bridal Updos</p>
+              </div>
+              <div class="text-center border-t border-borderPink/40 pt-4">
+                <span class="text-[9px] font-semibold text-accent uppercase tracking-widest">Click to View Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-overlay rounded-[32px]">
+            <div class="p-6 text-center text-white">
+              <h4 class="font-serif-luxury text-xl font-bold tracking-wider mb-2">Couture Hairstyles</h4>
+              <p class="text-xs text-[#FFFDFE]/80 mb-4 font-sans max-w-xs">Traditional bun settings, customized braided styles, and sleek contemporary designs for high-end parties.</p>
+              <span class="inline-block px-4 py-2 border border-[#FFFDFE]/40 text-[10px] uppercase font-bold tracking-widest rounded-full hover:bg-white hover:text-textMain transition-colors">Expand Detail</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 9. CONTACT & BOOKING SECTION -->
+  <section id="contact" class="py-24 bg-secondaryBg relative overflow-hidden">
+    <div class="absolute top-20 right-[-10%] w-[400px] h-[400px] bg-[#FFFDFE] rounded-full blur-3xl opacity-50"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        <!-- Left Side: Visual Map & Details -->
+        <div class="lg:col-span-5 reveal space-y-8">
+          <div>
+            <span class="text-xs font-sans font-semibold tracking-[0.3em] text-accent uppercase block mb-3">Visit Heaven</span>
+            <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold tracking-tight text-textMain mb-4">
+              Get in Touch with Us
+            </h2>
+            <div class="w-16">
+              <div class="rose-line"></div>
+            </div>
+          </div>
+
+          <!-- Business Details Card -->
+          <div class="bg-white border border-borderPink p-8 rounded-3xl space-y-6 shadow-sm">
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mt-1 flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-textMuted uppercase tracking-wider mb-1">Our Address</span>
+                <span class="text-sm font-bold text-textMain">Heaven Beauty Salon & Studio</span>
+                <span class="text-xs text-textMuted mt-1 leading-relaxed">99F2+5FM, Latifabad Unit 2, Latifabad, Hyderabad, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mt-1 flex-shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-textMuted uppercase tracking-wider mb-1">Phone & WhatsApp</span>
+                <a href="tel:+923003287865" class="text-sm font-bold text-textMain hover:text-accent transition-colors">+92 300 3287865</a>
+                <span class="text-[10px] text-roseGold font-semibold uppercase tracking-wider mt-1">Accepting bookings via Call & WhatsApp</span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-2xl bg-secondaryBg flex items-center justify-center text-accent mt-1 flex-shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-textMuted uppercase tracking-wider mb-1">Business Hours</span>
+                <span class="text-sm font-bold text-textMain">11:00 AM - 9:00 PM</span>
+                <span class="text-xs text-textMuted mt-1">Open 7 days a week (Monday to Sunday)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Google Maps Embed (Latifabad Unit 2, Hyderabad) -->
+          <div class="w-full h-64 rounded-3xl overflow-hidden border border-borderPink shadow-sm relative">
+            <iframe 
+              src="https://maps.google.com/maps?q=99F2+5FM%20Latifabad%20Unit%202,%20Hyderabad,%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Express Buttons -->
+          <div class="grid grid-cols-2 gap-4">
+            <a href="tel:+923003287865" class="px-6 py-4 rounded-full text-center text-xs font-bold tracking-wider text-white gradient-accent shadow-md hover:scale-105 active:scale-95 transition-all flex items-center justify-center space-x-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Call Salon Now</span>
+            </a>
+            <a href="https://wa.me/923003287865?text=Hello%20Heaven%20Beauty%20Salon%20%26%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="px-6 py-4 rounded-full text-center text-xs font-bold tracking-wider text-[#25D366] bg-white border border-[#25D366]/40 shadow-sm hover:bg-[#25D366]/10 hover:scale-105 active:scale-95 transition-all flex items-center justify-center space-x-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>WhatsApp Chat</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Luxury Conversion Booking Form -->
+        <div class="lg:col-span-7 reveal">
+          <div class="bg-white border border-borderPink p-8 sm:p-10 rounded-3xl shadow-lg relative">
+            
+            <h3 class="font-serif-luxury text-2xl font-bold text-textMain mb-2">Book Your Beauty Appointment</h3>
+            <p class="text-xs text-textMuted mb-8 leading-relaxed">
+              Fill in your preferred date, time, and luxury aesthetic services below. Our boutique concierge will instantly verify your booking.
+            </p>
+
+            <form id="booking-form" class="space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Name -->
+                <div class="flex flex-col">
+                  <label for="appointment-name" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Full Name *</label>
+                  <input type="text" id="appointment-name" required class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium" placeholder="E.g., Ayesha Ali">
+                </div>
+
+                <!-- Phone -->
+                <div class="flex flex-col">
+                  <label for="appointment-phone" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="appointment-phone" required class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium" placeholder="E.g., +92 300 1234567">
+                </div>
+              </div>
+
+              <!-- Service Interest Dropdown (Pre-fills automatically) -->
+              <div class="flex flex-col">
+                <label for="appointment-service" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Select Beauty Service *</label>
+                <select id="appointment-service" required class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium text-textMain">
+                  <option value="" disabled selected>-- Choose a Luxury Service --</option>
+                  <option value="Bridal Makeup">Bridal Makeup (Signature)</option>
+                  <option value="Party Makeup">Party Makeup (High-Glam)</option>
+                  <option value="Hair Styling">Hair Styling (Intricate)</option>
+                  <option value="Hair Treatments">Hair Treatments (Restore)</option>
+                  <option value="Keratin Treatment">Keratin Treatment (Smoothing)</option>
+                  <option value="Hair Spa">Hair Spa (Relaxing)</option>
+                  <option value="Facial Treatments">Facial Treatments (Glowing)</option>
+                  <option value="Skin Care">Skin Care (Aesthetics)</option>
+                  <option value="Waxing">Waxing (Sterile & Gentle)</option>
+                  <option value="Manicure & Pedicure">Manicure & Pedicure (Relaxing Spa)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Date -->
+                <div class="flex flex-col">
+                  <label for="appointment-date" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Preferred Appointment Date *</label>
+                  <input type="date" id="appointment-date" required class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium text-textMain">
+                </div>
+
+                <!-- Time -->
+                <div class="flex flex-col">
+                  <label for="appointment-time" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Preferred Time *</label>
+                  <input type="time" id="appointment-time" required class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium text-textMain">
+                </div>
+              </div>
+
+              <!-- Additional message -->
+              <div class="flex flex-col">
+                <label for="appointment-message" class="text-[10px] font-bold text-textMain uppercase tracking-wider mb-2">Special Request / Notes (Optional)</label>
+                <textarea id="appointment-message" rows="4" class="luxury-input w-full px-4 py-3 bg-primaryBg border border-borderPink rounded-xl text-sm font-medium" placeholder="Describe any specific style preferences or allergies..."></textarea>
+              </div>
+
+              <!-- Submission CTA -->
+              <button type="submit" class="w-full py-4 rounded-xl text-center text-xs font-bold tracking-widest text-white gradient-accent uppercase hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
+                Submit & Verify Appointment
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SUCCESS MODAL POPUP (Elegant interactive state) -->
+  <div id="success-modal" class="fixed inset-0 bg-textMain/75 z-[100] hidden items-center justify-center p-4 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-[32px] border border-borderPink max-w-md w-full p-8 text-center shadow-2xl relative transform scale-95 transition-transform duration-300 flex flex-col items-center">
+      
+      <!-- Crown Decor Icon -->
+      <div class="w-16 h-16 rounded-full bg-secondaryBg border border-roseGold/30 flex items-center justify-center text-accent mb-6">
+        <i data-lucide="crown" class="w-8 h-8"></i>
+      </div>
+
+      <h3 class="font-serif-luxury text-2xl font-bold text-textMain mb-2">Appointment Scheduled!</h3>
+      <p class="text-xs text-textMuted leading-relaxed mb-6">
+        Your booking request has been securely processed. To confirm your stylist slot instantly, click below to send your details directly via WhatsApp.
+      </p>
+
+      <div class="space-y-3 w-full">
+        <!-- Send via WhatsApp link -->
+        <a id="modal-whatsapp-link" href="#" target="_blank" class="block w-full py-3 rounded-full text-center text-xs font-bold tracking-wider text-white gradient-accent shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Confirm instantly on WhatsApp</span>
+        </a>
+        
+        <!-- Dismiss button -->
+        <button id="close-success-modal" class="block w-full py-3 rounded-full text-center text-xs font-bold tracking-wider text-textMuted bg-primaryBg border border-borderPink hover:text-accent hover:bg-secondaryBg transition-colors focus:outline-none">
+          Done, back to website
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- LIGHTBOX DETAIL MODAL FOR PORTFOLIO -->
+  <div id="lightbox-modal" class="fixed inset-0 bg-textMain/90 z-[100] hidden items-center justify-center p-4 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-[32px] border border-borderPink max-w-xl w-full p-6 sm:p-8 shadow-2xl relative transform scale-95 transition-transform duration-300 flex flex-col items-center">
+      
+      <!-- Close Button -->
+      <button id="close-lightbox" class="absolute top-4 right-4 p-2 text-textMuted hover:text-accent transition-colors focus:outline-none" aria-label="Close portfolio viewer">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Gradient Placeholder frame -->
+      <div id="lightbox-gradient" class="w-full h-80 rounded-2xl flex flex-col justify-between p-8 relative overflow-hidden shadow-inner">
+        <!-- Content gets injected by JS -->
+      </div>
+
+      <div class="text-center mt-6 w-full">
+        <h3 id="lightbox-title" class="font-serif-luxury text-2xl font-bold text-textMain mb-2">Portfolio Detail</h3>
+        <p id="lightbox-desc" class="text-xs text-textMuted leading-relaxed max-w-md mx-auto">
+          Detailed explanation of styling session, materials used, and artist design layout.
+        </p>
+      </div>
+
+      <div class="mt-8 w-full border-t border-borderPink/40 pt-6 flex justify-center">
+        <a href="#contact" class="px-6 py-3 rounded-full text-center text-xs font-bold tracking-wider text-white gradient-accent shadow-md hover:scale-105 active:scale-95 transition-all flex items-center space-x-2" onclick="document.getElementById('close-lightbox').click();">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span>Book similar Look</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 10. STICKY FEATURES -->
+  <!-- WhatsApp floating pulse link -->
+  <a href="https://wa.me/923003287865?text=Hello%20Heaven%20Beauty%20Salon%20%26%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 hover:rotate-6 transition-all duration-300 animate-pulse-gold focus:outline-none" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Scroll Back to top button -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-50 w-11 h-11 rounded-full border border-borderPink bg-white text-accent flex items-center justify-center shadow-lg hover:bg-secondaryBg hover:text-accent transform transition-all duration-300 opacity-0 translate-y-10 pointer-events-none focus:outline-none" aria-label="Back to top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+
+  <!-- 11. FOOTER -->
+  <footer class="bg-white border-t border-borderPink pt-16 pb-8 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-borderPink/40">
+        
+        <!-- Left Brand Description -->
+        <div class="md:col-span-4 space-y-6">
+          <a href="#home" class="flex flex-col items-start focus:outline-none">
+            <span class="font-serif-luxury text-2xl font-bold tracking-[0.18em] text-accent">HEAVEN</span>
+            <span class="text-[9px] font-semibold tracking-[0.3em] text-roseGold uppercase mt-0.5">Beauty Salon & Studio</span>
+          </a>
+          <p class="text-xs text-textMuted leading-relaxed max-w-sm">
+            Hyderabad's ultimate luxury salon destination for professional bridal makeup, exquisite styling, and advanced aesthetic skincare therapies. Open 7 days a week.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex space-x-4">
+            <a href="#" class="w-8 h-8 rounded-full border border-borderPink flex items-center justify-center text-textMuted hover:text-accent hover:border-accent hover:scale-110 transition-all duration-300" aria-label="Follow us on Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full border border-borderPink flex items-center justify-center text-textMuted hover:text-accent hover:border-accent hover:scale-110 transition-all duration-300" aria-label="Follow us on Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full border border-borderPink flex items-center justify-center text-textMuted hover:text-accent hover:border-accent hover:scale-110 transition-all duration-300" aria-label="Follow us on TikTok">
+              <i data-lucide="music" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Quick Links -->
+        <div class="md:col-span-2 space-y-4">
+          <h4 class="text-[10px] font-bold text-textMain uppercase tracking-widest">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="text-textMuted hover-gold-link hover:text-accent block py-1">Home</a></li>
+            <li><a href="#about" class="text-textMuted hover-gold-link hover:text-accent block py-1">About Us</a></li>
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Our Services</a></li>
+            <li><a href="#gallery" class="text-textMuted hover-gold-link hover:text-accent block py-1">Showcase</a></li>
+            <li><a href="#contact" class="text-textMuted hover-gold-link hover:text-accent block py-1">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Middle Services Menu -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-[10px] font-bold text-textMain uppercase tracking-widest">Selected Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Bridal Makeup</a></li>
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Keratin Silk Treatment</a></li>
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Facial & Skin Care</a></li>
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Hair Styling & Spa</a></li>
+            <li><a href="#services" class="text-textMuted hover-gold-link hover:text-accent block py-1">Manicure & Pedicure</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Quick Info -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-[10px] font-bold text-textMain uppercase tracking-widest">Get In Touch</h4>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-start space-x-2 text-textMuted">
+              <i data-lucide="map-pin" class="w-4 h-4 text-roseGold flex-shrink-0 mt-0.5"></i>
+              <span>Latifabad Unit 2, Hyderabad, Pakistan</span>
+            </li>
+            <li class="flex items-center space-x-2 text-textMuted">
+              <i data-lucide="phone" class="w-4 h-4 text-roseGold flex-shrink-0"></i>
+              <span>+92 300 3287865</span>
+            </li>
+            <li class="flex items-center space-x-2 text-textMuted">
+              <i data-lucide="mail" class="w-4 h-4 text-roseGold flex-shrink-0"></i>
+              <span>heaven.studio@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright row -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-textMuted">
+        <span>© 2026 Heaven Beauty Salon & Studio. All rights reserved.</span>
+        <span class="mt-2 sm:mt-0">Designed & Crafted with absolute luxury</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Custom Script link -->
+  <script src="script.js"></script>
+</body>
+</html>
